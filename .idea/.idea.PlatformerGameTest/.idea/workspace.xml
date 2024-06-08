@@ -20,22 +20,18 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="feef7e64-82c9-42cc-84c1-82fd65bf59c1" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.PlatformerGameTest/.idea/contentModel.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.PlatformerGameTest/.idea/contentModel.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.PlatformerGameTest/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.PlatformerGameTest/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/SampleScene.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/SampleScene.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Source/Animations/Player/Player.controller" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Source/Animations/Player/Player.controller" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Source/Animations/Player/Fall.anim" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Source/Animations/Player/Fall.anim.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Source/Animations/Player/Idle.anim" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Source/Animations/Player/Idle.anim.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Source/Animations/Player/Jump.anim" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Source/Animations/Player/Jump.anim.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Source/Animations/Player/Player.controller" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Source/Animations/Player/Player.controller.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Source/Animations/Player/Run.anim" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Source/Animations/Player/Run.anim.meta" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Source/Resources/Player.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Source/Resources/Player.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Source/Scripts/Core/Input/AssertsPath.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Source/Scripts/Core/Input/AssertsPath.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Source/Scripts/Core/Input/DesktopInput.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Source/Scripts/Core/Input/DesktopInput.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Source/Scripts/Core/Input/IMovable.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Source/Scripts/Core/Input/IMovable.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Source/Scripts/Core/Input/Player.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Source/Scripts/Core/Input/Player.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Source/Scripts/Core/Input/PlayerAnimation.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Source/Scripts/Core/Input/PlayerAnimation.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Source/Scripts/Core/Input/PlayerConfig.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Source/Scripts/Core/Input/PlayerConfig.cs.meta" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -113,7 +109,8 @@
       <updated>1717760439115</updated>
       <workItem from="1717760445806" duration="10000" />
       <workItem from="1717844907827" duration="7206000" />
-      <workItem from="1717856715632" duration="4082000" />
+      <workItem from="1717856715632" duration="4677000" />
+      <workItem from="1717880046415" duration="138000" />
     </task>
     <servers />
   </component>
