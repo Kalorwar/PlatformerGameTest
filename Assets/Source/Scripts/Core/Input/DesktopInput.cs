@@ -20,7 +20,8 @@ public class DesktopInput : IInput, ITickable
             OnClickUp?.Invoke();
         if (Input.GetKeyDown(KeyCode.S) || Input.GetKeyDown(KeyCode.DownArrow))
             OnClickDown?.Invoke();
-        if (Input.GetKeyUp(KeyCode.D) || Input.GetKeyUp(KeyCode.A) || Input.GetKeyUp(KeyCode.LeftArrow)|| Input.GetKeyUp(KeyCode.RightArrow))
+        if (Input.GetKeyUp(KeyCode.D) || Input.GetKeyUp(KeyCode.A) || Input.GetKeyUp(KeyCode.W)|| 
+            Input.GetKeyUp(KeyCode.UpArrow)|| Input.GetKeyUp(KeyCode.LeftArrow)|| Input.GetKeyUp(KeyCode.RightArrow))
             OnButtonUp?.Invoke();
     }
 }

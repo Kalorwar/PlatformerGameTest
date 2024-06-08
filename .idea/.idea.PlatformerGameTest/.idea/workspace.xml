@@ -23,16 +23,19 @@
       <change beforePath="$PROJECT_DIR$/.idea/.idea.PlatformerGameTest/.idea/contentModel.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.PlatformerGameTest/.idea/contentModel.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.PlatformerGameTest/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.PlatformerGameTest/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scenes/SampleScene.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/SampleScene.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Source/Palette/TerrainPalette.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Source/Palette/TerrainPalette.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Source/Pixel Adventure 1/Main Characters/Virtual Guy/Double Jump (32x32).png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Source/Pixel Adventure 1/Main Characters/Virtual Guy/Double Jump (32x32).png.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Source/Pixel Adventure 1/Main Characters/Virtual Guy/Fall (32x32).png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Source/Pixel Adventure 1/Main Characters/Virtual Guy/Fall (32x32).png.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Source/Pixel Adventure 1/Main Characters/Virtual Guy/Hit (32x32).png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Source/Pixel Adventure 1/Main Characters/Virtual Guy/Hit (32x32).png.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Source/Pixel Adventure 1/Main Characters/Virtual Guy/Idle (32x32).png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Source/Pixel Adventure 1/Main Characters/Virtual Guy/Idle (32x32).png.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Source/Pixel Adventure 1/Main Characters/Virtual Guy/Jump (32x32).png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Source/Pixel Adventure 1/Main Characters/Virtual Guy/Jump (32x32).png.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Source/Pixel Adventure 1/Main Characters/Virtual Guy/Run (32x32).png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Source/Pixel Adventure 1/Main Characters/Virtual Guy/Run (32x32).png.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Source/Pixel Adventure 1/Main Characters/Virtual Guy/Wall Jump (32x32).png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Source/Pixel Adventure 1/Main Characters/Virtual Guy/Wall Jump (32x32).png.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Source/Pixel Adventure 1/Terrain/Terrain Sliced (16x16).png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Source/Pixel Adventure 1/Terrain/Terrain Sliced (16x16).png.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ProjectSettings/ProjectSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/ProjectSettings.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Source/Animations/Player/Player.controller" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Source/Animations/Player/Player.controller" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Source/Resources/Player.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Source/Resources/Player.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Source/Scripts/Core/Input/AssertsPath.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Source/Scripts/Core/Input/AssertsPath.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Source/Scripts/Core/Input/DesktopInput.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Source/Scripts/Core/Input/DesktopInput.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Source/Scripts/Core/Input/IMovable.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Source/Scripts/Core/Input/IMovable.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Source/Scripts/Core/Input/Player.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Source/Scripts/Core/Input/Player.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Source/Scripts/Core/Input/PlayerAnimation.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Source/Scripts/Core/Input/PlayerAnimation.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Source/Scripts/Core/Input/PlayerConfig.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Source/Scripts/Core/Input/PlayerConfig.cs.meta" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -57,9 +60,11 @@
         <option value="$PROJECT_DIR$/Assets/Source/Scripts/Core/Interfaces/IInput.cs" />
         <option value="$PROJECT_DIR$/Assets/Source/Scripts/Core/Input/MovementHandler.cs" />
         <option value="$PROJECT_DIR$/Assets/Source/Scripts/Core/Installers/GameplaySceneInstaller.cs" />
-        <option value="$PROJECT_DIR$/Assets/Source/Scripts/Core/Input/DesktopInput.cs" />
         <option value="$PROJECT_DIR$/Assets/Source/Scripts/Core/Input/AssertsPath.cs" />
         <option value="$PROJECT_DIR$/Assets/Source/Scripts/Core/Input/PlayerAnimation.cs" />
+        <option value="$PROJECT_DIR$/Assets/Source/Scripts/Player/Player.cs" />
+        <option value="$PROJECT_DIR$/Assets/Source/Scripts/Core/Input/DesktopInput.cs" />
+        <option value="$PROJECT_DIR$/Assets/Source/Scripts/Player/PlayerAnimation.cs" />
       </list>
     </option>
   </component>
@@ -108,6 +113,7 @@
       <updated>1717760439115</updated>
       <workItem from="1717760445806" duration="10000" />
       <workItem from="1717844907827" duration="7206000" />
+      <workItem from="1717856715632" duration="4082000" />
     </task>
     <servers />
   </component>
@@ -126,6 +132,7 @@
         </entry>
       </map>
     </option>
+    <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="true" />
