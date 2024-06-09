@@ -1055,7 +1055,9 @@
                 <e p="Box3" t="Include" />
               </e>
               <e p="Checkpoints" t="Include">
-                <e p="Checkpoint" t="Include" />
+                <e p="Checkpoint" t="Include">
+                  <e p="Materials" t="Include" />
+                </e>
                 <e p="End" t="Include" />
                 <e p="Start" t="Include" />
               </e>
@@ -1089,7 +1091,9 @@
           <e p="Resources" t="Include" />
           <e p="Scripts" t="Include">
             <e p="Core" t="Include">
-              <e p="AssetsPath.cs" t="Include" />
+              <e p="Assets" t="Include">
+                <e p="AssetsPath.cs" t="Include" />
+              </e>
               <e p="Input" t="Include">
                 <e p="DesktopInput.cs" t="Include" />
                 <e p="MovementHandler.cs" t="Include" />
@@ -1102,14 +1106,37 @@
                 <e p="IInput.cs" t="Include" />
                 <e p="IMovable.cs" t="Include" />
               </e>
+              <e p="Services" t="Include">
+                <e p="SceneService.cs" t="Include" />
+              </e>
             </e>
-            <e p="Ground.cs" t="Include" />
+            <e p="DeathZone" t="Include">
+              <e p="DeathZone.cs" t="Include" />
+            </e>
+            <e p="Finish" t="Include">
+              <e p="Finish.cs" t="Include" />
+            </e>
+            <e p="Ground" t="Include">
+              <e p="Ground.cs" t="Include" />
+            </e>
+            <e p="Key" t="Include">
+              <e p="Key.cs" t="Include" />
+            </e>
             <e p="Player" t="Include">
               <e p="Config" t="Include">
                 <e p="PlayerConfig.cs" t="Include" />
               </e>
               <e p="Player.cs" t="Include" />
               <e p="PlayerAnimation.cs" t="Include" />
+              <e p="UI" t="Include">
+                <e p="PlayerKeyCountUI.cs" t="Include" />
+              </e>
+            </e>
+            <e p="Trap" t="Include">
+              <e p="HealingApple.cs" t="Include" />
+              <e p="PlayerHealthUI.cs" t="Include" />
+              <e p="Saw.cs" t="Include" />
+              <e p="Trap.cs" t="Include" />
             </e>
           </e>
         </e>

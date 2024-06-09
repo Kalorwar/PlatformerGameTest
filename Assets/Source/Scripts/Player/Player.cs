@@ -3,9 +3,11 @@ using UnityEngine;
 using Zenject;
 
 [RequireComponent(typeof(Rigidbody2D))]
-public class Player : MonoBehaviour, IMovable, IGroundChecker, IHitable
+public class Player : MonoBehaviour, IMovable, IGroundChecker
 {
-    public event Action OnDie;
+    public Action OnDie;
+    private float _maxHealth;
+    private PlayerHealthUI _playerHealthUI;
     
     [Inject]
     private void Constructor(PlayerConfig playerConfig)
@@ -19,12 +21,13 @@ public class Player : MonoBehaviour, IMovable, IGroundChecker, IHitable
     public float JumpForce { get; private set; }
     public float Health { get; private set; }
     public bool IsGround { get; private set; }
-    public Rigidbody2D Rigidbody2D { get; private set; }
-
-
+    public Rigidbody2D Rigidbody { get; private set; }
+    
     private void Awake()
     {
-        Rigidbody2D = GetComponent<Rigidbody2D>();
+        Rigidbody = GetComponent<Rigidbody2D>();
+        _maxHealth = Health;
+        _playerHealthUI = GetComponent<PlayerHealthUI>();
     }
 
     private void OnTriggerStay2D(Collider2D collider)
@@ -41,6 +44,17 @@ public class Player : MonoBehaviour, IMovable, IGroundChecker, IHitable
         }
     }
 
+    public void Healing(float healingValue)
+    {
+        if (Health < _maxHealth)
+            Health += healingValue;
+        
+        if (Health > _maxHealth)
+            Health = _maxHealth;
+        
+        _playerHealthUI.HealthCountChange();
+    }
+
     public void TakeDamage(float damage)
     {
         if (damage > 0)
@@ -53,16 +67,15 @@ public class Player : MonoBehaviour, IMovable, IGroundChecker, IHitable
         {
             throw new ArgumentException("Damage must be positive");
         }
+
+        if (Health < 0)
+            Health = 0;
+        
+        _playerHealthUI.HealthCountChange();
     }
 
-    private void Die()
+    public void Die()
     {
         OnDie?.Invoke();
     }
-}
-
-public interface IHitable
-{
-    public void TakeDamage(float damage);
-    public event Action OnDie;
 }

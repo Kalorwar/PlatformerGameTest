@@ -41,6 +41,7 @@ public class PlayerAnimation : MonoBehaviour
         _input.OnClickLeft -= ClickLeft;
         _input.OnClickRight -= ClickRight;
         _input.OnButtonUp -= ButtonUp;
+        _input.OnClickUp -= Jump;
     }
 
     private void ClickRight()
@@ -63,21 +64,23 @@ public class PlayerAnimation : MonoBehaviour
     {
         _velocity = 0;
         _animator.SetFloat(AssetsPath.AnimationPath.Velocity, _velocity);
-        _animator.SetBool(AssetsPath.AnimationPath.OnClickUp, false);
     }
     
     private void Falling()
     {
-        if (!_player.IsGround)
-            _animator.SetBool(AssetsPath.AnimationPath.IsFalling, true);
-        else
+        if (_player.IsGround)
         {
             _animator.SetBool(AssetsPath.AnimationPath.IsFalling, false);
+            _animator.SetBool(AssetsPath.AnimationPath.IsJump, false);
+        }
+        else
+        {
+            _animator.SetBool(AssetsPath.AnimationPath.IsFalling, true);
         }
     }
-    
+
     private void Jump()
     {
-        _animator.SetBool(AssetsPath.AnimationPath.OnClickUp, true);
+        _animator.SetBool(AssetsPath.AnimationPath.IsJump, true);
     }
 }

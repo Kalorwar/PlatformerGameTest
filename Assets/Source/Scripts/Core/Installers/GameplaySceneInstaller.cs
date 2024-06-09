@@ -7,6 +7,7 @@ public class GameplaySceneInstaller : MonoInstaller
     [SerializeField] private Transform _playerSpawnPoint;
     [SerializeField] private PlayerConfig _playerConfig;
     [SerializeField] private Player _player;
+    [SerializeField] private Finish _finish;
 
     private void Awake()
     {
@@ -16,6 +17,7 @@ public class GameplaySceneInstaller : MonoInstaller
 
     public override void InstallBindings()
     {
+        BindFinish();
         BindMovenent();
         BindPlayer();
     }
@@ -31,5 +33,10 @@ public class GameplaySceneInstaller : MonoInstaller
     {
         Container.BindInterfacesAndSelfTo<MovementHandler>().AsSingle().NonLazy();
         Container.BindInterfacesTo<DesktopInput>().FromNew().AsSingle();
+    }
+
+    private void BindFinish()
+    {
+        Container.Bind<Finish>().FromInstance(_finish).AsSingle();
     }
 }

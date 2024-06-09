@@ -202,7 +202,7 @@ GameObject:
   - component: {fileID: 7742193729356405877}
   - component: {fileID: 59298512185470279}
   m_Layer: 5
-  m_Name: Text (TMP)
+  m_Name: KeyCount
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -256,7 +256,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: 'Keys collected : 0/5'
+  m_text: 'Keys collected: 0/5'
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 125cb55b44b24c4393181402bc6200e6, type: 2}
   m_sharedMaterial: {fileID: 2100000, guid: 125cb55b44b24c4393181402bc6200e6, type: 2}
@@ -283,7 +283,7 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 33.35
+  m_fontSize: 34.3
   m_fontSizeBase: 36
   m_fontWeight: 400
   m_enableAutoSizing: 1
@@ -422,9 +422,11 @@ GameObject:
   - component: {fileID: 5539830278528648726}
   - component: {fileID: -7146313204325406594}
   - component: {fileID: 8565462249208022391}
+  - component: {fileID: 8366586369404744974}
   - component: {fileID: 1394814774765195216}
-  - component: {fileID: 8093605860119943116}
   - component: {fileID: 3225357545033553662}
+  - component: {fileID: 8093605860119943116}
+  - component: {fileID: 2023758232546427936}
   m_Layer: 0
   m_Name: Player
   m_TagString: Untagged
@@ -546,6 +548,19 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f4fcfb76bdee4fbd9f0c46e26f8aa424, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &8366586369404744974
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5539830278528648724}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 15a56ca15a614ac98c258441e5997e99, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _healthbar: {fileID: 6781609374927461376}
 --- !u!70 &1394814774765195216
 CapsuleCollider2D:
   m_ObjectHideFlags: 0
@@ -562,27 +577,6 @@ CapsuleCollider2D:
   m_Offset: {x: 0.014160216, y: -0.17768216}
   m_Size: {x: 1.3652688, y: 1.6837387}
   m_Direction: 0
---- !u!95 &8093605860119943116
-Animator:
-  serializedVersion: 5
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 5539830278528648724}
-  m_Enabled: 1
-  m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: c3a00894b177b164e84352adfda75c70, type: 2}
-  m_CullingMode: 0
-  m_UpdateMode: 0
-  m_ApplyRootMotion: 0
-  m_LinearVelocityBlending: 0
-  m_StabilizeFeet: 0
-  m_WarningMessage: 
-  m_HasTransformHierarchy: 1
-  m_AllowConstantClipSamplingOptimization: 1
-  m_KeepAnimatorStateOnDisable: 0
-  m_WriteDefaultValuesOnDisable: 0
 --- !u!61 &3225357545033553662
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -609,6 +603,46 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 0.2516297, y: 0.24950671}
   m_EdgeRadius: 0
+--- !u!95 &8093605860119943116
+Animator:
+  serializedVersion: 5
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5539830278528648724}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: c3a00894b177b164e84352adfda75c70, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorStateOnDisable: 0
+  m_WriteDefaultValuesOnDisable: 0
+--- !u!114 &2023758232546427936
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5539830278528648724}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3964b4aeb30e4898a7129fe09cc50752, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _keyCount: {fileID: 59298512185470279}
+  _keys:
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
 --- !u!1 &6088972691612514874
 GameObject:
   m_ObjectHideFlags: 0

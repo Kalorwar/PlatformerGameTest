@@ -5,16 +5,17 @@ public class MovementHandler : IDisposable
 {
     private IInput _input;
     private IMovable _movable;
+    private IGroundChecker _groundChecker;
 
-    public MovementHandler(IInput input, IMovable movable)
+    public MovementHandler(IInput input, IMovable movable, IGroundChecker groundChecker)
     {
         _input = input;
         _movable = movable;
+        _groundChecker = groundChecker;
 
         _input.OnClickLeft += ClickLeft;
         _input.OnClickRight += ClickRight;
         _input.OnClickUp += ClickUp;
-        _input.OnClickDown += ClockDown;
     }
     
     public void Dispose()
@@ -26,21 +27,17 @@ public class MovementHandler : IDisposable
 
     private void ClickRight()
     {
-        _movable.Rigidbody2D.velocity = new Vector2(1 * _movable.Speed, _movable.Rigidbody2D.velocity.y);
+        _movable.Rigidbody.velocity = new Vector2(1 * _movable.Speed, _movable.Rigidbody.velocity.y);
     }
 
     private void ClickLeft()
     {
-        _movable.Rigidbody2D.velocity = new Vector2(-1 * _movable.Speed, _movable.Rigidbody2D.velocity.y);
+        _movable.Rigidbody.velocity = new Vector2(-1 * _movable.Speed, _movable.Rigidbody.velocity.y);
     }
 
     private void ClickUp()
     {
-        _movable.Rigidbody2D.velocity = new Vector2(_movable.Rigidbody2D.velocity.x, 1 * _movable.JumpForce);
-    }
-
-    private void ClockDown()
-    {
-        _movable.Rigidbody2D.velocity = new Vector2(_movable.Rigidbody2D.velocity.x, -1);
+        if(_groundChecker.IsGround) 
+            _movable.Rigidbody.velocity = new Vector2(_movable.Rigidbody.velocity.x, 1 * _movable.JumpForce);
     }
 }
