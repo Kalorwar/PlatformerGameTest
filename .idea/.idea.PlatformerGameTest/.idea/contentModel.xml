@@ -1037,9 +1037,9 @@
         <e p="Source" t="Include">
           <e p="Animations" t="Include">
             <e p="Player" t="Include" />
+            <e p="Saw" t="Include" />
           </e>
           <e p="Fantasy Pixel Locks and Keys" t="Include">
-            <e p="Instructions.txt" t="Include" />
             <e p="PNG" t="Include" />
           </e>
           <e p="Materials" t="Include" />
@@ -1047,7 +1047,6 @@
             <e p="Sprites" t="Include" />
           </e>
           <e p="Pixel Adventure 1" t="Include">
-            <e p="Background" t="Include" />
             <e p="Items" t="Include">
               <e p="Boxes" t="Include">
                 <e p="Box1" t="Include" />
@@ -1064,12 +1063,8 @@
               <e p="Fruits" t="Include" />
             </e>
             <e p="Main Characters" t="Include">
-              <e p="Mask Dude" t="Include" />
-              <e p="Ninja Frog" t="Include" />
-              <e p="Pink Man" t="Include" />
               <e p="Virtual Guy" t="Include" />
             </e>
-            <e p="Other" t="Include" />
             <e p="Terrain" t="Include" />
             <e p="Traps" t="Include">
               <e p="Arrow" t="Include" />
@@ -1119,6 +1114,9 @@
             <e p="Ground" t="Include">
               <e p="Ground.cs" t="Include" />
             </e>
+            <e p="Healing" t="Include">
+              <e p="HealingApple.cs" t="Include" />
+            </e>
             <e p="Key" t="Include">
               <e p="Key.cs" t="Include" />
             </e>
@@ -1129,12 +1127,11 @@
               <e p="Player.cs" t="Include" />
               <e p="PlayerAnimation.cs" t="Include" />
               <e p="UI" t="Include">
+                <e p="PlayerHealthUI.cs" t="Include" />
                 <e p="PlayerKeyCountUI.cs" t="Include" />
               </e>
             </e>
             <e p="Trap" t="Include">
-              <e p="HealingApple.cs" t="Include" />
-              <e p="PlayerHealthUI.cs" t="Include" />
               <e p="Saw.cs" t="Include" />
               <e p="Trap.cs" t="Include" />
             </e>
